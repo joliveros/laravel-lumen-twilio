@@ -17,8 +17,9 @@ ngrok http 3000
 
 ## Setup your Webhooks
 Add your webhooks to your [Twilio Console](https://www.twilio.com/console/phone-numbers)
-`http://your-ngrok-domain-here.ngrok.io/voice`
-`http://your-ngrok-domain-here.io/message`
+  - `http://your-ngrok-domain-here.ngrok.io/voice`
+  - `http://your-ngrok-domain-here.io/message`
+
 ## License
 
 [MIT license](http://opensource.org/licenses/MIT)
