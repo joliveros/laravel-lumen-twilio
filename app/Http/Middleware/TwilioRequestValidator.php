@@ -17,6 +17,10 @@ class TwilioRequestValidator
      */
     public function handle($request, Closure $next)
     {
+      if (env('APP_ENV') === 'test') {
+        return $next($request);
+      }
+
       $requestValidator = new RequestValidator(env('TWILIO_APP_TOKEN'));
 
       $isValid = $requestValidator->validate(
