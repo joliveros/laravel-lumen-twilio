@@ -32,7 +32,7 @@ class TwilioRequestValidator
       if ($isValid) {
         return $next($request);
       } else {
-        return (new Response('You are not Twilio :(', 403));
+        return new Response('You are not Twilio :(', 403);
       }
     }
 }
